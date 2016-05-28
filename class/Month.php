@@ -8,7 +8,7 @@ class Month
      * 2nd parameter is the month (3->March, 4->April, ...)
      * 3rd parameter is the timeMachine (-1->previous month, 1->next month, ...)
      */
-    public static function getMonth($lang=null, $month=null, $tMachine=null)
+    public static function getMonth($lang=null, $tMachine=null, $month=null)
     {
         if (isset($month)){
             $requestedMonth = $month;
