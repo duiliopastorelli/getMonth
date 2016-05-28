@@ -29,29 +29,56 @@ class MonthTest extends PHPUnit_Framework_TestCase
 
     public function testGetItalianMonths()
     {
-        $this->assertEquals("maggio", Month::getMonth("it"));
-        $this->assertEquals("gennaio", Month::getMonth("it", 1));
-        $this->assertEquals("febbraio", Month::getMonth("it", 2));
-        $this->assertEquals("marzo", Month::getMonth("it", 3));
-        $this->assertEquals("aprile", Month::getMonth("it", 4));
-        $this->assertEquals("maggio", Month::getMonth("it", 5));
-        $this->assertEquals("giugno", Month::getMonth("it", 6));
-        $this->assertEquals("luglio", Month::getMonth("it", 7));
-        $this->assertEquals("agosto", Month::getMonth("it", 8));
-        $this->assertEquals("settembre", Month::getMonth("it", 9));
-        $this->assertEquals("ottobre", Month::getMonth("it", 10));
-        $this->assertEquals("novembre", Month::getMonth("it", 11));
-        $this->assertEquals("dicembre", Month::getMonth("it", 12));
+        $this->assertEquals("Maggio", Month::getMonth("it"));
+        $this->assertEquals("Gennaio", Month::getMonth("it", 1));
+        $this->assertEquals("Febbraio", Month::getMonth("it", 2));
+        $this->assertEquals("Marzo", Month::getMonth("it", 3));
+        $this->assertEquals("Aprile", Month::getMonth("it", 4));
+        $this->assertEquals("Maggio", Month::getMonth("it", 5));
+        $this->assertEquals("Giugno", Month::getMonth("it", 6));
+        $this->assertEquals("Luglio", Month::getMonth("it", 7));
+        $this->assertEquals("Agosto", Month::getMonth("it", 8));
+        $this->assertEquals("Settembre", Month::getMonth("it", 9));
+        $this->assertEquals("Ottobre", Month::getMonth("it", 10));
+        $this->assertEquals("Novembre", Month::getMonth("it", 11));
+        $this->assertEquals("Dicembre", Month::getMonth("it", 12));
     }
     
     public function testGetItalianPrevMonth()
     {
-        $this->assertEquals("aprile", Month::getMonth("it",null, -1));
+        $this->assertEquals("Aprile", Month::getMonth("it",null, -1));
     }
     
     public function testGetItalianNextMonth()
     {
-        $this->assertEquals("giugno", Month::getMonth("it",null, +1));
+        $this->assertEquals("Giugno", Month::getMonth("it",null, +1));
+    }
+
+    public function testGetGermanMonths()
+    {
+        $this->assertEquals("Mai", Month::getMonth("de"));
+        $this->assertEquals("Januar", Month::getMonth("de", 1));
+        $this->assertEquals("Februar", Month::getMonth("de", 2));
+        $this->assertEquals("März", Month::getMonth("de", 3));
+        $this->assertEquals("April", Month::getMonth("de", 4));
+        $this->assertEquals("Mai", Month::getMonth("de", 5));
+        $this->assertEquals("Juni", Month::getMonth("de", 6));
+        $this->assertEquals("Juli", Month::getMonth("de", 7));
+        $this->assertEquals("August", Month::getMonth("de", 8));
+        $this->assertEquals("September", Month::getMonth("de", 9));
+        $this->assertEquals("Oktober", Month::getMonth("de", 10));
+        $this->assertEquals("November", Month::getMonth("de", 11));
+        $this->assertEquals("Dezember", Month::getMonth("de", 12));
+    }
+
+    public function testGetGermanPrevMonth()
+    {
+        $this->assertEquals("April", Month::getMonth("de",null, -1));
+    }
+
+    public function testGetGermanNextMonth()
+    {
+        $this->assertEquals("Juni", Month::getMonth("de",null, +1));
     }
 
     public function testGetChineseMonth()

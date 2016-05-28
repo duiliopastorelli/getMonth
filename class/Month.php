@@ -20,11 +20,15 @@ class Month
         switch ($lang){
             case "it":
                 $result = self::generateItalianMonth($requestedMonth);
-            break;
+                break;
+
+            case "de":
+                $result = self::generateGermanMonth($requestedMonth);
+                break;
                 
             case "zh":
                 $result = self::generateChineseMonth($requestedMonth);
-            break;
+                break;
             
             default:
                 $result = $requestedMonth;
@@ -59,55 +63,104 @@ class Month
     {
         switch ($generatedMonth){
             case 1:
-                return "gennaio";
+                return "Gennaio";
             break;
             
             case 2:
-                return "febbraio";
+                return "Febbraio";
             break;
 
             case 3:
-                return "marzo";
+                return "Marzo";
                 break;
 
             case 4:
-                return "aprile";
+                return "Aprile";
                 break;
 
             case 5:
-                return "maggio";
+                return "Maggio";
                 break;
 
             case 6:
-                return "giugno";
+                return "Giugno";
                 break;
 
             case 7:
-                return "luglio";
+                return "Luglio";
                 break;
 
             case 8:
-                return "agosto";
+                return "Agosto";
                 break;
 
             case 9:
-                return "settembre";
+                return "Settembre";
                 break;
 
             case 10:
-                return "ottobre";
+                return "Ottobre";
                 break;
 
             case 11:
-                return "novembre";
+                return "Novembre";
                 break;
 
             case 12:
-                return "dicembre";
+                return "Dicembre";
+                break;
+        }
+    }
+
+    private function generateGermanMonth($generatedMonth)
+    {
+        switch ($generatedMonth) {
+            case 1:
+                return "Januar";
                 break;
 
-            case 1:
-                return "gennaio";
+            case 2:
+                return "Februar";
+                break;
+
+            case 3:
+                return "März";
+                break;
+
+            case 4:
+                return "April";
+                break;
+
+            case 5:
+                return "Mai";
+                break;
+
+            case 6:
+                return "Juni";
+                break;
+
+            case 7:
+                return "Juli";
+                break;
+
+            case 8:
+                return "August";
+                break;
+
+            case 9:
+                return "September";
+                break;
+
+            case 10:
+                return "Oktober";
+                break;
+
+            case 11:
+                return "November";
+                break;
+
+            case 12:
+                return "Dezember";
                 break;
         }
     }
