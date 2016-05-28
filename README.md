@@ -2,9 +2,10 @@
 Simple class to get a month in different formats and languages.
 
 ##Installation
-Copy the "Month.php" file inside your progect.
+Copy the "Month.php" file inside your project.
 
 Include it:
+
 ```php
 include "[PATH]/month.php";
 ```
@@ -30,21 +31,31 @@ Available languages are:
 
 ###Get the next and previous month (Time Machine) in a numeric format:
 
-``` Month::getMonth(null, 1); ```
+```php
+Month::getMonth(null, 1);
+```
 
-``` Month::getMonth(null, -1); ```
+```php
+Month::getMonth(null, -1);
+```
 
 Supported values for the Time Machine are 1->11 and -1->-11
 
 ###Get a particular month (3 that means March) in a numeric format:
 
-``` Month::getMonth(null, null, 3); ```
+```php
+Month::getMonth(null, null, 3);
+```
 
-## Other examples
+##Other examples
 - Get the next month in German:
 
-``` Month::getMonth("de", 1); ```
+```php
+Month::getMonth("de", 1);
+```
 
 - Get a particular German month (April):
 
-``` Month::getMonth("de", null, 4); ```
+```php
+Month::getMonth("de", null, 4);
+```
