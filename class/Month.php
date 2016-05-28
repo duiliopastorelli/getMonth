@@ -164,14 +164,5 @@ class Month
                 break;
         }
     }
-
-    //Generate The Chinese month ready to output, adding the Chinese character
-    private function generateChineseMonth($generatedMonth)
-    {
-        switch ($generatedMonth){
-            case 5:
-                return $generatedMonth."月";
-            break;
-        }
-    }
+    
 }

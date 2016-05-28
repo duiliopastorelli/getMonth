@@ -80,10 +80,5 @@ class MonthTest extends PHPUnit_Framework_TestCase
     {
         $this->assertEquals("Juni", Month::getMonth("de", 1));
     }
-
-    public function testGetChineseMonth()
-    {
-        $this->assertEquals("5月", Month::getMonth("zh"));
-    }
     
 }
