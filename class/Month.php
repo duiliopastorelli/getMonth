@@ -45,16 +45,16 @@ class Month
     }
     
     //Generate a mounth number adding o removing a vertain number of months
-    private function timeMachine($montsDiff)
+    private function timeMachine($monthsDiff)
     {
-        if (!isset($montsDiff)){
+        if (!isset($monthsDiff)){
             return self::generateCurrentMonth();
         } else {
             $currentMonth = self::generateCurrentMonth();
-            if (($currentMonth+$montsDiff)>12){
-                return ($currentMonth+$montsDiff)-12;
+            if (($currentMonth+$monthsDiff)>12){
+                return ($currentMonth+$monthsDiff)-12;
             } else {
-                return $currentMonth+$montsDiff;
+                return $currentMonth+$monthsDiff;
             }
         }
     }
