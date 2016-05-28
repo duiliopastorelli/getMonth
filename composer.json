@@ -2,7 +2,6 @@
   "name": "duiliopastorelli/get-month",
   "type": "Class",
   "description": "Class to get a Month in different formats and languages.",
-  "keywords": ["month, translation, date"],
   "homepage": "https://github.com/duiliopastorelli/getMonth",
   "license": "MIT",
   "authors": [
