@@ -7,10 +7,6 @@ Simple class to get a month in different formats and languages.
 $ composer require duiliopastorelli/getMonth
 ```
 
-```
-use Monolog\Logger;
-```
-
 ##Installation
 Copy the "Month.php" file inside your project.
 
