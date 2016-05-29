@@ -10,6 +10,9 @@
     ],
     "require": {},
     "autoload": {
-        "psr-4": {"GetMonth\\": "src/GetMonth"}
+        "psr-4": {
+            "GetMonth": "src/GetMonth/",
+            "GetMonth\\Test": "test/"
+        }
     }
 }
