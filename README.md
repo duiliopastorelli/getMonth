@@ -4,7 +4,7 @@ Simple class to get a month in different formats and languages.
 ## Installation via Composer
 
 ```
-$ composer require duiliopastorelli/getMonth
+$ composer require duiliopastorelli/get-Month
 ```
 
 ### Usage with Composer
@@ -15,12 +15,12 @@ You can call the class with:
 <?php
 require "vendor/autoload.php";
 
-use Duiliopastorelli\Month;
+use DuilioPastorelli\Month;
 
 echo Month::getMonth();
 ```
 
-Or if you don't want to add the "use Duiliopastorelli\Month" at the top, you can:
+Or if you don't want to add the "use DuilioPastorelli\Month" at the top, you can:
 
 ```php
 <?php
