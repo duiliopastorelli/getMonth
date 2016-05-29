@@ -1,5 +1,5 @@
 <?php
-namespace Month;
+namespace GetMonth;
 
 class Month
 {
