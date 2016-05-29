@@ -1,4 +1,6 @@
 <?php
+namespace DuilioPastorelli;
+
 require_once ('src/GetMonth/Month.php');
 
 class MonthTest extends PHPUnit_Framework_TestCase

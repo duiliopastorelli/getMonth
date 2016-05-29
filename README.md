@@ -7,14 +7,43 @@ Simple class to get a month in different formats and languages.
 $ composer require duiliopastorelli/getMonth
 ```
 
-##Installation
+### Usage with Composer
+
+You can call the class with:
+
+```php
+<?php
+require "vendor/autoload.php";
+
+use Duiliopastorelli\Month;
+
+echo Month::getMonth();
+```
+
+Or if you don't want to add the "use Duiliopastorelli\Month" at the top, you can:
+
+```php
+<?php
+require "vendor/autoload.php";
+
+echo \DuilioPastorelli\Month::getMonth();
+```
+
+See ***Usage*** section for more options.
+
+##Installation "Quick And Dirty"
 Copy the "Month.php" file inside your project.
 
 Include it:
 
 ```php
+<?php
 include "[PATH]/month.php";
+
+echo Month::getMonth();
 ```
+
+See ***Usage*** section for more options.
 
 ##Usage
 

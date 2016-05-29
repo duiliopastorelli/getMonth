@@ -10,9 +10,9 @@
     ],
     "require": {},
     "autoload": {
-        "psr-0": {
-            "GetMonth\\": "src/GetMonth/",
-            "GetMonth\\Test\\": "test/"
+        "psr-4": {
+            "DuilioPastorelli\\": "src/",
+            "DuilioPastorelli\\Test\\": "test/"
         }
     }
 }

@@ -1,5 +1,5 @@
 <?php
-namespace GetMonth;
+namespace DuilioPastorelli;
 
 class Month
 {
