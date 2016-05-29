@@ -1,4 +1,5 @@
 <?php
+namespace Month;
 
 class Month
 {
