@@ -1,5 +1,5 @@
 <?php
-require_once ('class/Month.php');
+require_once ('src/GetMonth/Month.php');
 
 class MonthTest extends PHPUnit_Framework_TestCase
 {
